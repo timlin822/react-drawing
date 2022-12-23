@@ -1,0 +1,89 @@
+.toolbox{
+    width: 20%;
+    height: calc(100vh - 60px);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 20px;
+}
+.toolbox .options,
+.toolbox .size,
+.toolbox .colors{
+    margin-bottom: 25px;
+}
+.options .options-title,
+.size .size-title,
+.colors .colors-title{
+    font-size: 24px;
+    font-weight: 500;
+}
+.options .options-title,
+.colors .colors-title{
+    margin-bottom: 10px;
+}
+.options .tool{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px 0px 10px 10px;
+}
+.options .tool-active{
+    color: #d80000;
+}
+.size .input[type="range"]{
+    accent-color: #003366;
+    margin-left: 10px;
+}
+.colors .colors-group{
+    display: flex;
+    margin-left: 10px;
+}
+.colors-group .input[type="radio"]{
+    display: none;
+}
+.colors-group .color-border{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colors-group .color{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.colors-group .input[type="radio"]:checked+.color-border{
+    border: 2px solid #003366;
+}
+.toolbox .btn{
+    cursor: pointer;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 700;;
+    letter-spacing: 2px;
+    text-align: center;
+    border: 2px solid #003366;
+    padding: 8px 0px;
+    margin-bottom: 25px;
+    transition: color 0.5s ease,background-color 0.5s ease;
+}
+.toolbox .btn-clear{
+    color: #003366;
+    background-color: #fff;
+}
+.toolbox .btn-clear:hover{
+    color: #fff;
+    background-color: #003366;
+}
+.toolbox .btn-save{
+    color: #fff;
+    background-color: #003366;
+}
+.toolbox .btn-save:hover{
+    color: #003366;
+    background-color: #fff;
+}
